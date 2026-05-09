@@ -1,6 +1,6 @@
 {
   "name": "@-label-/shell-core",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "license": "MIT",
   "description": "Zustand store factory + ShellApi for the MFE shell framework. Provides createShellStore, createShellApi, dynamic slices, navigation/right-bar slices.",
   "type": "module",
@@ -41,6 +41,7 @@
     "pnpm": "^10"
   },
   "peerDependencies": {
+    "@-label-/contracts": ">=0.4.0",
     "zustand": ">=5"
   },
   "devDependencies": {
