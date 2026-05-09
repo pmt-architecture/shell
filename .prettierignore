@@ -1,0 +1,10 @@
+dist
+coverage
+pnpm-lock.yaml
+node_modules
+*.md
+*.css
+.changeset
+.gitignore
+.npmrc
+.lintstagedrc.json

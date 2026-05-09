@@ -1,0 +1,4 @@
+{
+  "$schema": "https://raw.githubusercontent.com/nicolo-ribaudo/oxlint-config-schema/refs/heads/main/schema.json",
+  "extends": ["../../node_modules/@-label-/lint-config/.oxlintrc.base.json"]
+}

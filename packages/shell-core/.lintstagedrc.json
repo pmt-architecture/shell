@@ -1,0 +1,4 @@
+{
+  "*.{js,ts,tsx,mjs}": ["pnpm run eslint:staged", "pnpm run oxlint:staged", "prettier --check"],
+  "!{*.js,*.ts,*.tsx,*.mjs}": ["prettier --check --ignore-unknown"]
+}

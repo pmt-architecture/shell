@@ -1,0 +1,53 @@
+{
+  "name": "fe-shell",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Workspace root for @-label-/contracts + @-label-/shell-core + @-label-/shell-hooks (FE_STANDARDS §4.1c canonical exception)",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "simple-git-hooks",
+    "build:all": "pnpm -r --include-workspace-root run build",
+    "lint:all": "pnpm -r --include-workspace-root run \"/^[eo][sx]lint$/\"",
+    "typecheck:all": "pnpm -r --include-workspace-root run typecheck",
+    "test:all": "pnpm -r --include-workspace-root run test",
+    "changeset": "changeset",
+    "changeset:status": "changeset status",
+    "version:packages": "changeset version",
+    "publish:packages": "changeset-publish-fix --no-build",
+    "override": "pnpx --package=@-label-/cli-utils pnpm_local_override",
+    "check:override": "pnpx --package=@-label-/cli-utils pnpm_local_override_check",
+    "prettier:check": "prettier --check .",
+    "prettier:write": "prettier --write --cache ."
+  },
+  "engines": {
+    "node": "^24",
+    "pnpm": "^10.30"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm run check:override && npx lint-staged",
+    "commit-msg": "npx commit-lint $1"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@-label-/changeset-publish-fix",
+      "@-label-/commit-lint",
+      "@-label-/lint-config",
+      "simple-git-hooks"
+    ]
+  },
+  "devDependencies": {
+    "@-label-/changeset-publish-fix": "0.1.11",
+    "@-label-/commit-lint": "0.3.7",
+    "@-label-/lint-config": "2.7.0",
+    "@-label-/tsconfig-base": "0.1.0",
+    "@changesets/cli": "2.31.0",
+    "eslint": "9.39.4",
+    "lint-staged": "16.4.0",
+    "oxlint": "1.63.0",
+    "prettier": "3.8.3",
+    "simple-git-hooks": "2.13.1",
+    "typescript": "5.9.3"
+  }
+}

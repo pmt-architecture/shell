@@ -1,0 +1,59 @@
+{
+  "name": "@-label-/shell-core",
+  "version": "0.4.0",
+  "license": "MIT",
+  "description": "Zustand store factory + ShellApi for the MFE shell framework. Provides createShellStore, createShellApi, dynamic slices, navigation/right-bar slices.",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "publishConfig": {
+    "access": "restricted",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "import": "./dist/index.js"
+      }
+    }
+  },
+  "scripts": {
+    "build": "vite build",
+    "test": "vitest run",
+    "test:ci": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "pnpm run \"/^[eo][sx]lint$/\"",
+    "eslint:base": "eslint --cache --no-warn-ignored --max-warnings 0",
+    "eslint": "pnpm run eslint:base src",
+    "eslint:staged": "pnpm run eslint:base",
+    "oxlint:base": "oxlint -c .oxlintrc.json",
+    "oxlint": "pnpm run oxlint:base src",
+    "oxlint:staged": "pnpm run oxlint:base"
+  },
+  "engines": {
+    "node": "^24",
+    "pnpm": "^10"
+  },
+  "peerDependencies": {
+    "zustand": ">=5"
+  },
+  "devDependencies": {
+    "@-label-/contracts": "workspace:*",
+    "@-label-/tsconfig-base": "0.1.0",
+    "@-label-/vite-lib-config": "0.2.0",
+    "@-label-/vitest-config": "0.1.0",
+    "@rolldown/plugin-babel": "0.2.2",
+    "@types/node": "24.12.0",
+    "@vitejs/plugin-react": "6.0.1",
+    "vite": "8.0.8",
+    "vite-plugin-dts": "4.5.4",
+    "vitest": "4.1.5",
+    "zustand": "5.0.13"
+  }
+}

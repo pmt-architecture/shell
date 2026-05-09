@@ -1,0 +1,72 @@
+{
+  "name": "@-label-/shell-hooks",
+  "version": "0.2.4",
+  "license": "MIT",
+  "description": "React hooks + context provider for the MFE shell framework. Wraps shell-core for component-level integration: useShellApi, useSlice, useSliceEvent, useShellStore.",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "publishConfig": {
+    "access": "restricted",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "import": "./dist/index.js"
+      }
+    }
+  },
+  "scripts": {
+    "build": "vite build",
+    "test": "vitest run",
+    "test:ci": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "pnpm run \"/^[eo][sx]lint$/\"",
+    "eslint:base": "eslint --cache --no-warn-ignored --max-warnings 0",
+    "eslint": "pnpm run eslint:base src",
+    "eslint:staged": "pnpm run eslint:base",
+    "oxlint:base": "oxlint -c .oxlintrc.json",
+    "oxlint": "pnpm run oxlint:base src",
+    "oxlint:staged": "pnpm run oxlint:base"
+  },
+  "engines": {
+    "node": "^24",
+    "pnpm": "^10"
+  },
+  "dependencies": {
+    "@-label-/shell-core": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": ">=19",
+    "react-router": ">=7",
+    "zustand": ">=5"
+  },
+  "devDependencies": {
+    "@-label-/contracts": "workspace:*",
+    "@-label-/tsconfig-base": "0.1.0",
+    "@-label-/vite-lib-config": "0.2.0",
+    "@-label-/vitest-config": "0.1.0",
+    "@rolldown/plugin-babel": "0.2.2",
+    "@testing-library/jest-dom": "6.9.1",
+    "@testing-library/react": "16.3.2",
+    "@types/node": "24.12.0",
+    "@types/react": "19.2.14",
+    "@vitejs/plugin-react": "6.0.1",
+    "babel-plugin-react-compiler": "1.0.0",
+    "jsdom": "29.1.1",
+    "react": "19.2.5",
+    "react-dom": "19.2.5",
+    "react-router": "7.15.0",
+    "vite": "8.0.8",
+    "vite-plugin-dts": "4.5.4",
+    "vitest": "4.1.5",
+    "zustand": "5.0.13"
+  }
+}
