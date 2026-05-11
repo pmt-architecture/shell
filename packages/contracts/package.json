@@ -32,7 +32,7 @@
     "eslint:base": "eslint --cache --no-warn-ignored --max-warnings 0",
     "eslint": "pnpm run eslint:base src",
     "eslint:staged": "pnpm run eslint:base",
-    "oxlint:base": "oxlint -c .oxlintrc.json",
+    "oxlint:base": "oxlint -c oxlint.config.ts",
     "oxlint": "pnpm run oxlint:base src",
     "oxlint:staged": "pnpm run oxlint:base"
   },

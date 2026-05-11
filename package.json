@@ -38,9 +38,9 @@
     ]
   },
   "devDependencies": {
-    "@-label-/changeset-publish-fix": "0.1.11",
-    "@-label-/commit-lint": "0.3.7",
-    "@-label-/lint-config": "2.7.0",
+    "@-label-/changeset-publish-fix": "0.1.12",
+    "@-label-/commit-lint": "0.3.8",
+    "@-label-/lint-config": "3.0.1",
     "@-label-/tsconfig-base": "0.1.0",
     "@changesets/cli": "2.31.0",
     "eslint": "9.39.4",

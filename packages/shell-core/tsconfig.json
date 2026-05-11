@@ -1,4 +1,7 @@
 {
   "extends": "@-label-/tsconfig-base",
-  "include": ["src"]
+  "include": ["src", "oxlint.config.ts"],
+  "compilerOptions": {
+    "allowImportingTsExtensions": true
+  }
 }

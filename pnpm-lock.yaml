@@ -11,14 +11,14 @@ importers:
   .:
     devDependencies:
       '@-label-/changeset-publish-fix':
-        specifier: 0.1.11
-        version: 0.1.11
+        specifier: 0.1.12
+        version: 0.1.12
       '@-label-/commit-lint':
-        specifier: 0.3.7
-        version: 0.3.7
+        specifier: 0.3.8
+        version: 0.3.8
       '@-label-/lint-config':
-        specifier: 2.7.0
-        version: 2.7.0(@typescript-eslint/eslint-plugin@8.59.2(@typescript-eslint/parser@8.59.2(eslint@9.39.4)(typescript@5.9.3))(eslint@9.39.4)(typescript@5.9.3))(@typescript-eslint/utils@8.59.2(eslint@9.39.4)(typescript@5.9.3))(oxlint@1.63.0)(vitest@4.1.5(@types/node@24.12.0)(jsdom@29.1.1)(vite@8.0.8(@types/node@24.12.0)(yaml@2.8.4)))
+        specifier: 3.0.1
+        version: 3.0.1(@typescript-eslint/eslint-plugin@8.59.2(@typescript-eslint/parser@8.59.2(eslint@9.39.4)(typescript@5.9.3))(eslint@9.39.4)(typescript@5.9.3))(@typescript-eslint/utils@8.59.2(eslint@9.39.4)(typescript@5.9.3))(oxlint@1.63.0)(vitest@4.1.5(@types/node@24.12.0)(jsdom@29.1.1)(vite@8.0.8(@types/node@24.12.0)(yaml@2.8.4)))
       '@-label-/tsconfig-base':
         specifier: 0.1.0
         version: 0.1.0
@@ -170,17 +170,18 @@ importers:
 
 packages:
 
-  '@-label-/changeset-publish-fix@0.1.11':
-    resolution: {integrity: sha512-7cQCnhox52xcT05DobJAj31aegUpNyhDkFBtSz5UIvoyZfFoZUOsptMYi1IFnNbF4/sig35mdTIzSgPXDaKnxA==}
+  '@-label-/changeset-publish-fix@0.1.12':
+    resolution: {integrity: sha512-NlTLQiT74MAFzNuDNFKqbUJnDLPiaoBnWNqMS3EAfK8li3DNq9lspFYqu1eA0B2rVRmlUVFTxGOHF0Rp+/1tdQ==}
+    engines: {node: ^24, pnpm: ^10}
     hasBin: true
 
-  '@-label-/commit-lint@0.3.7':
-    resolution: {integrity: sha512-I0gNqMNY2Ei4BDzZpN3ToKwExa5BDJm9gUKpWkmKXqdVZ/YqA5qRz24wURnJKfc9WzLBcqB8ccubifIJhYo/vw==}
-    engines: {node: '>=24.0.0', pnpm: '>=10'}
+  '@-label-/commit-lint@0.3.8':
+    resolution: {integrity: sha512-nuZXBEG1wzxsS///8vgf3rNeG/9nOzHdl6Ykx9/pieEklMtj4Y5abGfJFmbSwMubTeX+jq6+bBzpNjlt7wg/6A==}
+    engines: {node: ^24, pnpm: ^10}
     hasBin: true
 
-  '@-label-/lint-config@2.7.0':
-    resolution: {integrity: sha512-lR4lLXg6+hiU8Jbl3+AixX3Jb8knarslGRU6Gh6wgnIu2/i9KEPdNCJl2MTcjjP5/64NaosZgo528H5Xrc+EVA==}
+  '@-label-/lint-config@3.0.1':
+    resolution: {integrity: sha512-G7Sq0vQsCfsAPbRtWjyvhz9+vtqEuaqOZXDcgD/dd+q5gzuJKq/3TLIz2n+ZL7IuVOV6cTex0rJGnieJOLAa2Q==}
     engines: {node: ^24, pnpm: ^10}
 
   '@-label-/tsconfig-base@0.1.0':
@@ -1111,8 +1112,8 @@ packages:
       babel-plugin-react-compiler:
         optional: true
 
-  '@vitest/eslint-plugin@1.6.16':
-    resolution: {integrity: sha512-2pBN1F1JXq6zTSaYC58CMJa7pGxXIRsLfOioeZM4cPE3pRdSh1ySTSoHPQlOTEF5WgoVzWZQxhGQ3ygT78hOVg==}
+  '@vitest/eslint-plugin@1.6.17':
+    resolution: {integrity: sha512-sIVY9ZeVcXyPxFCNRkIt8Yw4keKIcUyp9/8qnmuomPwE+ST1htw5sZsbqdUMTiah9SmCg1JYoK9RqdDtPeNYYg==}
     engines: {node: '>=18'}
     peerDependencies:
       '@typescript-eslint/eslint-plugin': '*'
@@ -3444,17 +3445,17 @@ packages:
 
 snapshots:
 
-  '@-label-/changeset-publish-fix@0.1.11': {}
+  '@-label-/changeset-publish-fix@0.1.12': {}
 
-  '@-label-/commit-lint@0.3.7': {}
+  '@-label-/commit-lint@0.3.8': {}
 
-  '@-label-/lint-config@2.7.0(@typescript-eslint/eslint-plugin@8.59.2(@typescript-eslint/parser@8.59.2(eslint@9.39.4)(typescript@5.9.3))(eslint@9.39.4)(typescript@5.9.3))(@typescript-eslint/utils@8.59.2(eslint@9.39.4)(typescript@5.9.3))(oxlint@1.63.0)(vitest@4.1.5(@types/node@24.12.0)(jsdom@29.1.1)(vite@8.0.8(@types/node@24.12.0)(yaml@2.8.4)))':
+  '@-label-/lint-config@3.0.1(@typescript-eslint/eslint-plugin@8.59.2(@typescript-eslint/parser@8.59.2(eslint@9.39.4)(typescript@5.9.3))(eslint@9.39.4)(typescript@5.9.3))(@typescript-eslint/utils@8.59.2(eslint@9.39.4)(typescript@5.9.3))(oxlint@1.63.0)(vitest@4.1.5(@types/node@24.12.0)(jsdom@29.1.1)(vite@8.0.8(@types/node@24.12.0)(yaml@2.8.4)))':
     dependencies:
       '@eslint-react/eslint-plugin': 2.13.0(eslint@9.39.4)(typescript@5.9.3)
       '@eslint/js': 9.39.4
       '@eslint/json': 0.14.0
       '@eslint/markdown': 7.5.1
-      '@vitest/eslint-plugin': 1.6.16(@typescript-eslint/eslint-plugin@8.59.2(@typescript-eslint/parser@8.59.2(eslint@9.39.4)(typescript@5.9.3))(eslint@9.39.4)(typescript@5.9.3))(eslint@9.39.4)(typescript@5.9.3)(vitest@4.1.5(@types/node@24.12.0)(jsdom@29.1.1)(vite@8.0.8(@types/node@24.12.0)(yaml@2.8.4)))
+      '@vitest/eslint-plugin': 1.6.17(@typescript-eslint/eslint-plugin@8.59.2(@typescript-eslint/parser@8.59.2(eslint@9.39.4)(typescript@5.9.3))(eslint@9.39.4)(typescript@5.9.3))(eslint@9.39.4)(typescript@5.9.3)(vitest@4.1.5(@types/node@24.12.0)(jsdom@29.1.1)(vite@8.0.8(@types/node@24.12.0)(yaml@2.8.4)))
       eslint: 9.39.4
       eslint-config-prettier: 10.1.8(eslint@9.39.4)
       eslint-import-resolver-typescript: 4.4.4(eslint-plugin-import-x@4.16.2(@typescript-eslint/utils@8.59.2(eslint@9.39.4)(typescript@5.9.3))(eslint@9.39.4))(eslint@9.39.4)
@@ -4484,7 +4485,7 @@ snapshots:
       '@rolldown/plugin-babel': 0.2.2(@babel/core@7.29.0)(@babel/runtime@7.29.2)(rolldown@1.0.0-rc.15)(vite@8.0.8(@types/node@24.12.0)(yaml@2.8.4))
       babel-plugin-react-compiler: 1.0.0
 
-  '@vitest/eslint-plugin@1.6.16(@typescript-eslint/eslint-plugin@8.59.2(@typescript-eslint/parser@8.59.2(eslint@9.39.4)(typescript@5.9.3))(eslint@9.39.4)(typescript@5.9.3))(eslint@9.39.4)(typescript@5.9.3)(vitest@4.1.5(@types/node@24.12.0)(jsdom@29.1.1)(vite@8.0.8(@types/node@24.12.0)(yaml@2.8.4)))':
+  '@vitest/eslint-plugin@1.6.17(@typescript-eslint/eslint-plugin@8.59.2(@typescript-eslint/parser@8.59.2(eslint@9.39.4)(typescript@5.9.3))(eslint@9.39.4)(typescript@5.9.3))(eslint@9.39.4)(typescript@5.9.3)(vitest@4.1.5(@types/node@24.12.0)(jsdom@29.1.1)(vite@8.0.8(@types/node@24.12.0)(yaml@2.8.4)))':
     dependencies:
       '@typescript-eslint/scope-manager': 8.59.2
       '@typescript-eslint/utils': 8.59.2(eslint@9.39.4)(typescript@5.9.3)
