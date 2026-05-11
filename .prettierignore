@@ -2,7 +2,7 @@ dist
 coverage
 pnpm-lock.yaml
 node_modules
-*.md
+**/CHANGELOG.md
 *.css
 .changeset
 .gitignore
