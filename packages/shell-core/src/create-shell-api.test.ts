@@ -121,21 +121,8 @@ describe('createShellApi', () => {
     });
   });
 
-  describe('panel delegation', () => {
-    it('openPanel delegates to store', () => {
-      const api = createShellApi(store);
-      api.openPanel({ panelId: 'detail', payload: { id: '1' } });
-
-      expect(getState(store).rightBar.isOpen).toBe(true);
-      expect(getState(store).rightBar.stack).toHaveLength(1);
-    });
-
-    it('closePanel delegates to store', () => {
-      const api = createShellApi(store);
-      api.openPanel({ panelId: 'detail', payload: {} });
-      api.closePanel();
-
-      expect(getState(store).rightBar.isOpen).toBe(false);
-    });
-  });
+  // Panel methods removed from ShellApi (ADR-016). Panel communication now
+  // flows through slice events defined in domain-specific contract packages
+  // (e.g. @-label-/host-contracts). The host translates events into internal
+  // rightBarSlice actions — that wiring is tested in the host app, not here.
 });

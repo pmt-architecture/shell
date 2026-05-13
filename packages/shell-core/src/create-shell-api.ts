@@ -19,15 +19,6 @@ const state = (store: ShellStore): ShellStoreState => store.getState() as unknow
  *   The host is the only entity that should perform absolute navigation.
  */
 export const createShellApi = (store: ShellStore, mfePrefix?: string): ShellApi => ({
-  // Right-bar
-  openPanel: request => state(store).openPanel(request),
-  closePanel: () => state(store).closePanel(),
-  updatePanelPayload: payload => state(store).updatePanelPayload(payload),
-
-  // Panel lifecycle (ref-counting)
-  registerInPanel: panelId => state(store).registerInPanel(panelId),
-  unregisterInPanel: panelId => state(store).unregisterInPanel(panelId),
-
   // Navigation (scoped when mfePrefix is set)
   navigate: path => {
     if (mfePrefix && path.startsWith('/')) {

@@ -38,19 +38,14 @@ export interface RightBarState {
 }
 
 // ── ShellApi (exposed to remotes via props) ──────────────────
+//
+// Minimalist API: navigation (scoped) + dynamic slice registry primitives.
+// All cross-shell communication (panels, dialogs, etc.) flows through slice
+// events defined in domain-specific contract packages — see ADR-016.
 
 export interface ShellApi {
-  // Right-bar
-  openPanel(request: RightBarRequest): void;
-  closePanel(): void;
-  updatePanelPayload(payload: Record<string, unknown>): void;
-
-  // Navigation
+  // Navigation (scoped per MFE prefix when applicable)
   navigate(path: string): void;
-
-  // Panel lifecycle (ref-counting)
-  registerInPanel(panelId: string): void;
-  unregisterInPanel(panelId: string): void;
 
   // Dynamic slice registry — state
   registerSlice<T>(descriptor: SliceDescriptor<T>): void;
