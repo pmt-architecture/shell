@@ -1,5 +1,13 @@
 # @-label-/shell-hooks
 
+## 0.2.6
+
+### Patch Changes
+
+- Updated dependencies [2cecc99]
+  - @-label-/contracts@0.5.0
+  - @-label-/shell-core@0.5.0
+
 ## 0.2.4
 
 ### Patch Changes
