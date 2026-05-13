@@ -1,5 +1,6 @@
 {
   "name": "@-label-/shell-hooks",
+  "private": false,
   "version": "0.2.5",
   "license": "MIT",
   "description": "React hooks + context provider for the MFE shell framework. Wraps shell-core for component-level integration: useShellApi, useSlice, useSliceEvent, useShellStore.",
