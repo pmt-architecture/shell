@@ -8,7 +8,7 @@ React hooks and context provider for the MFE shell framework. Thin layer over [`
 pnpm add @-label-/shell-hooks
 ```
 
-Peer dependencies: `@-label-/shell-contracts >=0.6.0`, `react >=19`, `react-router >=7`, `zustand >=5`.
+Peer dependencies: `@-label-/shell-contracts >=1.0.0`, `react >=19`, `react-router >=7`, `zustand >=5`.
 
 ## What it exposes
 

@@ -42,7 +42,7 @@
     "pnpm": "^10"
   },
   "peerDependencies": {
-    "@-label-/shell-contracts": ">=0.6.0",
+    "@-label-/shell-contracts": ">=1.0.0",
     "zustand": ">=5"
   },
   "devDependencies": {

@@ -8,7 +8,7 @@ Zustand-based store factory and `ShellApi` implementation for the MFE shell fram
 pnpm add @-label-/shell-core
 ```
 
-Peer dependencies: `@-label-/shell-contracts >=0.6.0`, `zustand >=5`.
+Peer dependencies: `@-label-/shell-contracts >=1.0.0`, `zustand >=5`.
 
 ## What it exposes
 
