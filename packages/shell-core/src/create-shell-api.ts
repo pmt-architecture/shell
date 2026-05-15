@@ -1,4 +1,4 @@
-import type { EventDescriptor, ShellApi, SliceDescriptor } from '@-label-/contracts';
+import type { EventDescriptor, ShellApi, SliceDescriptor } from '@-label-/shell-contracts';
 
 import type { NavigationSliceState } from './slices/navigation.slice';
 import type { RightBarSliceState } from './slices/right-bar.slice';

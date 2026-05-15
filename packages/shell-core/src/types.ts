@@ -1,4 +1,4 @@
-import type { EventDescriptor, SliceDescriptor } from '@-label-/contracts';
+import type { EventDescriptor, SliceDescriptor } from '@-label-/shell-contracts';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any -- Slice factories receive zustand's set/get which operate on the composed store type, unknown at compile time
 export type SliceFactory<T = Record<string, unknown>> = (set: (function_: (state: any) => any) => void, get: () => any) => T;
@@ -24,4 +24,4 @@ export interface DynamicSlicesState {
   emitSliceEvent: <T>(descriptor: EventDescriptor<T>, payload: T) => void;
 }
 
-export { type EventDescriptor, type SliceDescriptor } from '@-label-/contracts';
+export { type EventDescriptor, type SliceDescriptor } from '@-label-/shell-contracts';

@@ -2,7 +2,7 @@
 
 Workspace root for the **MFE Shell Framework** — FE_STANDARDS §4.1c canonical Caso c exception with three coupled publishable packages:
 
-- [`packages/contracts/`](packages/contracts/) — `@-label-/contracts` (foundation types, type-only)
+- [`packages/shell-contracts/`](packages/shell-contracts/) — `@-label-/shell-contracts` (foundation types, type-only)
 - [`packages/shell-core/`](packages/shell-core/) — `@-label-/shell-core` (zustand store + slice API)
 - [`packages/shell-hooks/`](packages/shell-hooks/) — `@-label-/shell-hooks` (React hooks + context provider)
 

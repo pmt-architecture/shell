@@ -1,7 +1,7 @@
 import { devtools, subscribeWithSelector } from 'zustand/middleware';
 import { createStore } from 'zustand/vanilla';
 
-import type { EventDescriptor, SliceDescriptor } from '@-label-/contracts';
+import type { EventDescriptor, SliceDescriptor } from '@-label-/shell-contracts';
 
 import type { DynamicSlicesState, EventEnvelope, SliceFactory } from './types';
 

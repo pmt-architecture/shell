@@ -1,4 +1,4 @@
-# @-label-/contracts
+# @-label-/shell-contracts
 
 Foundation **type-only** package for the MFE shell framework. Defines the descriptors and the `ShellApi` surface shared across the host and every remote MFE.
 
@@ -31,7 +31,7 @@ Minimalist surface: scoped `navigate`, dynamic slice registry primitives (`regis
 ## Usage
 
 ```ts
-import type { ShellApi, SliceDescriptor, EventDescriptor } from '@-label-/contracts';
+import type { ShellApi, SliceDescriptor, EventDescriptor } from '@-label-/shell-contracts';
 
 const COUNTER_SLICE: SliceDescriptor<{ value: number }> = {
   name: 'counter',

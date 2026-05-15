@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-import type { EventDescriptor } from '@-label-/contracts';
+import type { EventDescriptor } from '@-label-/shell-contracts';
 import type { DynamicSlicesState, EventEnvelope } from '@-label-/shell-core';
 
 import { getShellStoreInstance } from './use-shell-store';

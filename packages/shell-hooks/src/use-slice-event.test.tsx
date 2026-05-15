@@ -7,7 +7,7 @@ import { MemoryRouter } from 'react-router';
 import { act, render, renderHook } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 
-import type { EventDescriptor } from '@-label-/contracts';
+import type { EventDescriptor } from '@-label-/shell-contracts';
 import { createShellStore } from '@-label-/shell-core';
 
 import type { SampleEntityRef } from './__test-fixtures__/types.js';

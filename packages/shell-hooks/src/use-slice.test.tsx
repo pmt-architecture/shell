@@ -7,7 +7,7 @@ import { MemoryRouter } from 'react-router';
 import { renderHook } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 
-import type { SliceDescriptor } from '@-label-/contracts';
+import type { SliceDescriptor } from '@-label-/shell-contracts';
 import { createShellStore } from '@-label-/shell-core';
 
 import { ShellApiProvider } from './use-shell-api.js';

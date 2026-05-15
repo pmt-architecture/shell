@@ -1,7 +1,7 @@
 import { createContext, use, useEffect, useMemo, useRef } from 'react';
 import { useNavigate } from 'react-router';
 
-import type { ShellApi } from '@-label-/contracts';
+import type { ShellApi } from '@-label-/shell-contracts';
 import type { ShellStore } from '@-label-/shell-core';
 import { createShellApi } from '@-label-/shell-core';
 

@@ -1,4 +1,4 @@
-import type { RightBarRequest, RightBarStackItem, RightBarState } from '@-label-/contracts';
+import type { RightBarRequest, RightBarStackItem, RightBarState } from '@-label-/shell-contracts';
 
 import type { SliceFactory } from '../types';
 

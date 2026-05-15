@@ -44,7 +44,7 @@ importers:
         specifier: 5.9.3
         version: 5.9.3
 
-  packages/contracts:
+  packages/shell-contracts:
     devDependencies:
       '@-label-/tsconfig-base':
         specifier: 0.1.0
@@ -70,9 +70,9 @@ importers:
 
   packages/shell-core:
     devDependencies:
-      '@-label-/contracts':
+      '@-label-/shell-contracts':
         specifier: workspace:*
-        version: link:../contracts
+        version: link:../shell-contracts
       '@-label-/tsconfig-base':
         specifier: 0.1.0
         version: 0.1.0
@@ -110,9 +110,9 @@ importers:
         specifier: workspace:*
         version: link:../shell-core
     devDependencies:
-      '@-label-/contracts':
+      '@-label-/shell-contracts':
         specifier: workspace:*
-        version: link:../contracts
+        version: link:../shell-contracts
       '@-label-/tsconfig-base':
         specifier: 0.1.0
         version: 0.1.0

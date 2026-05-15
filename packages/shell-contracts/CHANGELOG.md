@@ -1,4 +1,4 @@
-# @-label-/contracts
+# @-label-/shell-contracts
 
 ## 0.5.0
 

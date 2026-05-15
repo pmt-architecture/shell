@@ -1,5 +1,5 @@
 /**
- * @-label-/contracts
+ * @-label-/shell-contracts
  * Framework-level contracts shared across MFEs.
  *
  * Domain types (vehicles, rentals, maintenance, inventory) live in

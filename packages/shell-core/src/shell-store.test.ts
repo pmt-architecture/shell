@@ -4,7 +4,7 @@
  */
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
-import type { EventDescriptor, SliceDescriptor } from '@-label-/contracts';
+import type { EventDescriptor, SliceDescriptor } from '@-label-/shell-contracts';
 
 import type { SampleEntityRef } from './__test-fixtures__/types.js';
 import type { NavigationSliceState } from './slices/navigation.slice.js';

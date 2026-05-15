@@ -2,7 +2,7 @@
   "name": "fe-shell",
   "version": "0.0.0",
   "private": true,
-  "description": "Workspace root for @-label-/contracts + @-label-/shell-core + @-label-/shell-hooks (FE_STANDARDS §4.1c canonical exception)",
+  "description": "Workspace root for @-label-/shell-contracts + @-label-/shell-core + @-label-/shell-hooks (FE_STANDARDS §4.1c canonical exception)",
   "license": "MIT",
   "type": "module",
   "scripts": {

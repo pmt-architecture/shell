@@ -8,7 +8,7 @@ Zustand-based store factory and `ShellApi` implementation for the MFE shell fram
 pnpm add @-label-/shell-core
 ```
 
-Peer dependencies: `@-label-/contracts >=0.4.0`, `zustand >=5`.
+Peer dependencies: `@-label-/shell-contracts >=0.6.0`, `zustand >=5`.
 
 ## What it exposes
 
@@ -29,7 +29,7 @@ Peer dependencies: `@-label-/contracts >=0.4.0`, `zustand >=5`.
 
 ### Dynamic registry types
 
-`DynamicSlicesState`, `EventEnvelope`, `SliceFactory`, plus re-exports of `EventDescriptor` and `SliceDescriptor` from `@-label-/contracts`.
+`DynamicSlicesState`, `EventEnvelope`, `SliceFactory`, plus re-exports of `EventDescriptor` and `SliceDescriptor` from `@-label-/shell-contracts`.
 
 `EventEnvelope.__nonce` is generated fresh on every emit (via `crypto.randomUUID()`) so Zustand's `Object.is` equality always sees a different reference — guarantees listeners fire even when the same payload is emitted repeatedly.
 

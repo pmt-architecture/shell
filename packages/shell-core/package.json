@@ -42,11 +42,11 @@
     "pnpm": "^10"
   },
   "peerDependencies": {
-    "@-label-/contracts": ">=0.4.0",
+    "@-label-/shell-contracts": ">=0.6.0",
     "zustand": ">=5"
   },
   "devDependencies": {
-    "@-label-/contracts": "workspace:*",
+    "@-label-/shell-contracts": "workspace:*",
     "@-label-/tsconfig-base": "0.1.0",
     "@-label-/vite-lib-config": "0.2.0",
     "@-label-/vitest-config": "0.1.0",
