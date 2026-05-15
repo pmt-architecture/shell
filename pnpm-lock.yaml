@@ -10,9 +10,9 @@ importers:
 
   .:
     devDependencies:
-      '@-label-/changeset-publish-fix':
-        specifier: 0.1.12
-        version: 0.1.12
+      '@-label-/changeset-publish':
+        specifier: 0.2.0
+        version: 0.2.0
       '@-label-/commit-lint':
         specifier: 0.3.8
         version: 0.3.8
@@ -170,8 +170,8 @@ importers:
 
 packages:
 
-  '@-label-/changeset-publish-fix@0.1.12':
-    resolution: {integrity: sha512-NlTLQiT74MAFzNuDNFKqbUJnDLPiaoBnWNqMS3EAfK8li3DNq9lspFYqu1eA0B2rVRmlUVFTxGOHF0Rp+/1tdQ==}
+  '@-label-/changeset-publish@0.2.0':
+    resolution: {integrity: sha512-cXHcgOmuDXuBxCNriiXGIH8LecCVR3iPv2yPvFJnH86bOL/G1eQEUEnCbZqBG9X0SD8JLmLOCihgk4l0gs6sPQ==}
     engines: {node: ^24, pnpm: ^10}
     hasBin: true
 
@@ -3445,7 +3445,7 @@ packages:
 
 snapshots:
 
-  '@-label-/changeset-publish-fix@0.1.12': {}
+  '@-label-/changeset-publish@0.2.0': {}
 
   '@-label-/commit-lint@0.3.8': {}
 
