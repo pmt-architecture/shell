@@ -1,5 +1,11 @@
 # @-label-/shell-contracts
 
+## 1.1.0
+
+### Minor Changes
+
+- 2e7d61f: Add optional `name` to `MfeChildRoute`: the federation name of the remote that a child `entry` override points to. Without it the host registers the child under the parent's name and resolves the module from the wrong container.
+
 ## 1.0.0
 
 ### Major Changes
