@@ -30,8 +30,14 @@ export interface MfeConfigEntry {
 export interface MfeChildRoute {
   path: string;
   module: string;
-  /** Override parent entry — loads this child from a different remote. */
+  /** Override parent entry — loads this child from a different remote. Must be set together with `name`. */
   entry?: string;
+  /**
+   * Federation name of the remote that `entry` points to (the container name it
+   * was built with). Required when `entry` loads from a different remote;
+   * defaults to the parent name otherwise.
+   */
+  name?: string;
   tab?: {
     label: string;
     icon?: string;
